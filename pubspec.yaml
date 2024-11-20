@@ -1,0 +1,15 @@
+name: responsive
+description: "A Flutter package to make your app responsive according to a reference resolution device or size percentage from the real device."
+version: 1.3.7
+homepage:
+
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
