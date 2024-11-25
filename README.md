@@ -80,31 +80,6 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-## API
-
-### `Responsive` class
-
-#### `init(BuildContext context, {double referenceWidth, double referenceHeight})`
-
-Initializes the `Responsive` class with the provided `BuildContext` and reference width and height.
-
-#### `w(double width)`
-#### `h(double height)`
-#### `wp`
-#### `hp`
-
-Get responsive width and height for the provided width and height units respectively.
-
-### Extensions
-
-#### `num.w`
-
-Get responsive width for the provided unit.
-
-#### `num.h`
-
-Get responsive height for the provided unit.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
