@@ -8,7 +8,7 @@ Add this to your package's `pubspec.yaml` file and then run `pub get`:
 
 ```yaml
 dependencies:
-  lite_storage: 
+  responsive: 
     git: https://github.com/ArZHa03/responsive.git
 ```
 
