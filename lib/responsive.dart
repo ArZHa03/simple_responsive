@@ -50,13 +50,8 @@ class Responsive {
       return size * (widthRatio < heightRatio ? widthRatio : heightRatio);
     }
 
-    if (screenAspectRatio > referenceAspectRatio) {
-      return size * (screenSize / referenceSize) * (referenceAspectRatio / screenAspectRatio);
-    }
-
-    if (screenAspectRatio < referenceAspectRatio) {
-      return size * (screenSize / referenceSize) * (screenAspectRatio / referenceAspectRatio);
-    }
+    if (screenAspectRatio > referenceAspectRatio) return size * (screenSize / referenceSize) * (referenceAspectRatio / screenAspectRatio);
+    if (screenAspectRatio < referenceAspectRatio) return size * (screenSize / referenceSize) * (screenAspectRatio / referenceAspectRatio);
 
     return size * (screenSize / referenceSize);
   }
