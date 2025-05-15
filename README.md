@@ -1,4 +1,4 @@
-# Responsive
+# Simple Responsive
 
 A Flutter package to make your app responsive according to a reference resolution device or size percentage from the real device.
 
@@ -14,12 +14,12 @@ dependencies:
 
 ## Usage
 
-To use the `Responsive` class, you need to provide the `BuildContext` and the reference width and height of your design.
+To use the `SimpleResponsive` class, you need to provide the `BuildContext` and the reference width and height of your design.
 
 ```dart
 @override
 void initState() {
-  Responsive.init(context, referenceWidth: 1080, referenceHeight: 1920);
+  SimpleResponsive.init(context, referenceWidth: 1080, referenceHeight: 1920);
   super.initState();
 }
 ```
@@ -29,8 +29,8 @@ void initState() {
 You can get responsive sizes for width and height using the `w` and `h` methods respectively.
 
 ```dart
-double responsiveWidth = Responsive.w(100); // Get responsive width for 100 units
-double responsiveHeight = Responsive.h(100); // Get responsive height for 100 units
+double responsiveWidth = SimpleResponsive.w(100); // Get responsive width for 100 units
+double responsiveHeight = SimpleResponsive.h(100); // Get responsive height for 100 units
 ```
 
 ### Getting Responsive Sizes Using Extensions
@@ -47,8 +47,8 @@ double responsiveHeight = 100.h; // Get responsive height for 100 units
 You can get the screen width and height using the `screenWidth` and `screenHeight` methods respectively.
 
 ```dart
-double screenWidth = Responsive.wp; // Get screen width 100% from the real device
-double screenHeight = Responsive.hp; // Get screen height 100% from the real device
+double screenWidth = SimpleResponsive.wp; // Get screen width 100% from the real device
+double screenHeight = SimpleResponsive.hp; // Get screen height 100% from the real device
 ```
 
 ### Getting Screen Dimensions (Percentage) Using Extensions 
@@ -62,25 +62,25 @@ double screenHeight = 100.hp; // Get screen height 100% from the real device
 
 ### Example
 
-Here is a complete example of how to use the `Responsive` package in your Flutter app:
+Here is a complete example of how to use the `SimpleResponsive` package in your Flutter app:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:responsive/responsive.dart';
+import 'package:simple_responsive/simple_responsive.dart';
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Responsive.init(context, referenceWidth: 1080, referenceHeight: 1920);
+    SimpleResponsive.init(context, referenceWidth: 1080, referenceHeight: 1920);
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Responsive Example')),
+        appBar: AppBar(title: Text('Simple Responsive Example')),
         body: Center(
           child: Container(
             width: 100.w, // Responsive width
             height: 100.h, // Responsive height
             color: Colors.blue,
-            child: Center(child: Text('Responsive Box')),
+            child: Center(child: Text('Simple Responsive Box')),
           ),
         ),
       ),
