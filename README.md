@@ -9,7 +9,7 @@ Add this to your package's `pubspec.yaml` file and then run `pub get`:
 ```yaml
 dependencies:
   responsive: 
-    git: https://github.com/ArZHa03/responsive.git
+    git: https://github.com/ArZHa03/simple_responsive.git
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ void initState() {
 }
 ```
 
-### Getting Responsive Sizes
+### Getting Responsive Sizes Using Instance Methods
 
 You can get responsive sizes for width and height using the `w` and `h` methods respectively.
 
@@ -33,7 +33,7 @@ double responsiveWidth = Responsive.w(100); // Get responsive width for 100 unit
 double responsiveHeight = Responsive.h(100); // Get responsive height for 100 units
 ```
 
-### Using Extensions
+### Getting Responsive Sizes Using Extensions
 
 You can also use the provided extensions on `num` to get responsive sizes more conveniently.
 
@@ -42,13 +42,22 @@ double responsiveWidth = 100.w; // Get responsive width for 100 units
 double responsiveHeight = 100.h; // Get responsive height for 100 units
 ```
 
-### Getting Screen Dimensions
+### Getting Screen Dimensions (Percentage) Using Instance Methods
+
+You can get the screen width and height using the `screenWidth` and `screenHeight` methods respectively.
+
+```dart
+double screenWidth = Responsive.wp; // Get screen width 100% from the real device
+double screenHeight = Responsive.hp; // Get screen height 100% from the real device
+```
+
+### Getting Screen Dimensions (Percentage) Using Extensions 
 
 You can get the screen width and height using the `wp` and `hp` properties respectively.
 
 ```dart
-double screenWidth = Responsive.wp; // Get screen width
-double screenHeight = Responsive.hp; // Get screen height
+double screenWidth = 100.wp; // Get screen width 100% from the real device
+double screenHeight = 100.hp; // Get screen height 100% from the real device
 ```
 
 ### Example
