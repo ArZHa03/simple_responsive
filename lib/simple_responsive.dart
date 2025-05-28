@@ -63,14 +63,14 @@ class SimpleResponsive {
   static double h(double size) => _getResponsiveSize(size, isWidth: false);
   static double w(double size) => _getResponsiveSize(size, isWidth: true);
 
-  static double get hp => _screenHeight;
-  static double get wp => _screenWidth;
+  static double hp(double size) => _screenHeight * (size / 100);
+  static double wp(double size) => _screenWidth * (size / 100);
 }
 
 extension ResponsiveSize on num {
   double get h => SimpleResponsive.h(toDouble());
   double get w => SimpleResponsive.w(toDouble());
 
-  double get hp => SimpleResponsive.hp;
-  double get wp => SimpleResponsive.wp;
+  double get hp => SimpleResponsive.hp(toDouble());
+  double get wp => SimpleResponsive.wp(toDouble());
 }

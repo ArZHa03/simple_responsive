@@ -18,9 +18,9 @@ To use the `SimpleResponsive` class, you need to provide the `BuildContext` and 
 
 ```dart
 @override
-void initState() {
+void didChangeDependencies() {
   SimpleResponsive.init(context, referenceWidth: 1080, referenceHeight: 1920);
-  super.initState();
+  super.didChangeDependencies();
 }
 ```
 

@@ -1,6 +1,6 @@
 name: simple_responsive
 description: "A Flutter package to make your app responsive according to a reference resolution device or size percentage from the real device."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ArZHa03/simple_responsive
 
 environment:

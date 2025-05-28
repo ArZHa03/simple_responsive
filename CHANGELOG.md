@@ -6,3 +6,7 @@
 - 2 Algorithms responsive: 
   - Algorithm 1: Responsive according reference resolution device.
   - Algorithm 2: Responsive according size percentage from the real device.
+
+## 1.0.1 (29/05/2025)
+
+- Fixed Algorithm responsive size percentage from the real device.
